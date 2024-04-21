@@ -68,25 +68,3 @@ light.addEventListener("click", function () {
   postli.style.color = ""
 })
 
-function imageHandler(img) {
-  let imgSrc = img.split("img/")
-  let important = imgSrc[1]
-
-  let conatiner = document.createElement("div")
-  conatiner.setAttribute("class", "newdiv")
-  conatiner.setAttribute("onclick", "closeWindow()")
-
-  let imgCon = document.createElement("div")
-  imgCon.setAttribute("class", "imgdiv")
-
-  let imge = document.createElement("img")
-  imge.setAttribute("src", `img/${important}`)
-  imge.setAttribute("class", "img-new")
-
-  imgCon.append(imge)
-  conatiner.append(imgCon)
-  body.append(conatiner)
-}
-function closeWindow() {
-  document.querySelector(".newdiv").remove()
-}
