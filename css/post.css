@@ -1,0 +1,141 @@
+@font-face {
+  font-family: my1;
+  src: url(../Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: my2;
+  src: url(../Fonts/Rubik-VariableFont_wght.ttf);
+}
+* {
+  font-family: my1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  margin: 0 100px;
+  height: 60px;
+  margin-inline: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header h2 {
+  padding-right: 340px;
+  font-size: 19px;
+}
+header ul {
+  display: inline-flex;
+  align-items: center;
+}
+header ul li {
+  padding-inline: 10px;
+  list-style: none;
+  margin-inline: 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+}
+header ul button {
+  padding: 2px 35px;
+  border: 1px solid rgb(12, 108, 187);
+  border-radius: 5px;
+  background-color: rgb(12, 108, 187);
+  color: #fff;
+  cursor: pointer;
+}
+
+.main-header {
+  margin: 5px 11vw;
+  height: fit-content;
+  background-color: #f3f3f3;
+  padding: 15px;
+}
+.post-by-me {
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 50px;
+}
+.posts {
+  margin: 10px auto;
+  width: 90%;
+  height: 180px;
+  background-color: rgb(231, 225, 225);
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.posts h1 {
+  padding: 8px 0;
+}
+.text {
+  font-size: 14px;
+  padding: 8px;
+  font-family: my2;
+}
+.date1 {
+  font-size: 15px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.postheader {
+  width: 100%;
+  margin: 0 auto;
+  height: 80vh;
+  background-color: rgb(215, 219, 226);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+.postheader h2 {
+  padding: 8px 0;
+  font-size: 19px;
+}
+.list {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+}
+.list input {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 1px solid #627b77;
+}
+.input {
+  height: 60px;
+}
+.textarea {
+  height: 150px;
+  margin-bottom: 30px;
+}
+.textarea textarea {
+  max-width: 430px;
+  min-width: 430px;
+  min-height: 90%;
+  max-height: 90%;
+  outline: none;
+  padding: 5px 8px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.list label {
+  padding: 10px 0;
+  font-size: 15px;
+}
+.submit {
+  background-color: rgb(11, 81, 128);
+  color: #fff;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid rgb(11, 81, 128);
+  height: 50px;
+  cursor: pointer;
+}

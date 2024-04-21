@@ -1,0 +1,26 @@
+@font-face {
+  font-family: my1;
+  src: url(../Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: my2;
+  src: url(../Fonts/Rubik-VariableFont_wght.ttf);
+}
+* {
+  font-family: my1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}

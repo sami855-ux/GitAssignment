@@ -1,0 +1,150 @@
+@font-face {
+  font-family: my1;
+  src: url(../Fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: my2;
+  src: url(../Fonts/Rubik-VariableFont_wght.ttf);
+}
+* {
+  font-family: my1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: #e4e9f7;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-image: url(../img/car.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.wrapper {
+  display: flex;
+  height: 96vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 45%;
+  height: 100vh;
+  margin: 15px auto;
+  padding-left: 20px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.box {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 124px rgba(62, 63, 62, 0.1),
+    2px 30px 64px -48px rgba(1, 0, 0, 0.7);
+}
+.form-box {
+  width: 550px;
+  margin-top: 15px;
+}
+.form-box header {
+  font-size: 21px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-box .field {
+  display: flex;
+  margin-bottom: 7px;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.field label {
+  font-size: 14px;
+  font-family: my2;
+}
+.form-box form .input input {
+  height: 31px;
+  width: 90%;
+  font-size: 14px;
+  font-family: my2;
+  padding-left: 18px;
+  padding: 0 10px;
+  margin: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+}
+
+#ppicture {
+  border: 0px solid #ccc;
+  height: 25px;
+}
+.form-box form .input select {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  height: 35px;
+  margin: 7px 0;
+  width: 90%;
+}
+.btn2 {
+  height: 35px;
+  width: 80%;
+  margin-left: 30px;
+  background: rgba(76, 68, 182, 0.888);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+.submit {
+  width: 100%;
+}
+.link {
+  margin-bottom: 15px;
+}
+.link p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+.error {
+  width: 90%;
+  margin: 5px auto;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.error.form-errors .error {
+  border-color: rgb(215, 36, 36);
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid rgb(192, 181, 181);
+}
+.form-errors {
+  color: #de1717;
+  font-family: my2;
+}
+.form-sucess {
+  color: rgb(42, 172, 10);
+  font-family: my2;
+}
